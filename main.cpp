@@ -1,8 +1,8 @@
 #pragma warning (disable:4996)
 #include <cstdio>
-#include <math.h>
+
 int main() {
-	/*
+	
 	//1031
 	{
 		int x;
@@ -24,7 +24,7 @@ int main() {
 	//1034
 	{
 		int x;
-		scanf("%o", &x);	
+		scanf("%o", &x);
 		printf("%d", x);
 	}
 	//1035
@@ -119,7 +119,7 @@ int main() {
 		int a, b;
 		scanf("%d %d", &a, &b);
 		printf("%d", a << b);
-	}*/
+	}
 	//1049
 	{
 		int a, b;
