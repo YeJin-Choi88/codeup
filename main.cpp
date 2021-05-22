@@ -1,168 +1,207 @@
 #pragma warning (disable:4996)
 #include <cstdio>
-
+#include <math.h>
 int main() {
-	//1001
+	/*
+	//1031
 	{
-		printf("Hello");
+		int x;
+		scanf("%d", &x);
+		printf("%o", x);	//8진수
 	}
-
-	//1002
+	//1032
 	{
-		printf("Hello World");
+		int x;
+		scanf("%d", &x);
+		printf("%x", x);	//16진수 소문자
 	}
-	//1003
+	//1033
 	{
-		printf("Hello\nWorld");
+		int x;
+		scanf("%d", &x);
+		printf("%X", x);	//16진수 대문자
 	}
-	//1004
+	//1034
 	{
-		printf("'Hello'");
+		int x;
+		scanf("%o", &x);	
+		printf("%d", x);
 	}
-	//1005
+	//1035
 	{
-		printf("\"Hello World\"");
+		int x;
+		scanf("%x", &x);	//16진수 소문자
+		printf("%o", x);	//8진수
 	}
-	//1006
+	//1036
 	{
-		printf("\"!@#$%%^&*()\"");
+		char a;
+		scanf("%c", &a);
+		printf("%d", a);
 	}
-	//1007
+	//1037
 	{
-		printf("\"C:\\\Download\\hello.cpp\"");
+		int x;
+		scanf("%d", &x);
+		printf("%c", x);
 	}
-	//1008
-	printf("\n");
+	//1038
 	{
-		printf("\u250C\u252C\u2510\n\u251C\u253C\u2524\n\u2514\u2534\u2518");
+		long long int x, y;
+		scanf("%lld %lld", &x, &y);
+		printf("%lld", x+y);
 	}
-	//1010
+	//1039
 	{
-		int n;	//정수형 변수 선언
-		scanf("%d", &n); // 변수에 정수값을 저장
-		printf("%d", n); // 변수에 저장되어있는 값 출력
-
-		return 0;
+		long long int x, y;
+		scanf("%lld %lld", &x, &y);
+		printf("%lld", x + y);
 	}
-	//1011
+	//1040
 	{
-		char x; // 문자형으로 변수 하나 선언
-		scanf("%c", &x); //변수에 문자를 저장
-		printf("%c", x); //변수에 저장되어 있는 문자 출력
+		long long int x;
+		scanf("%lld", &x);
+		printf("%lld", -x);
 	}
-	//1012
+	//1041
 	{
-		float x;	//실수형으로 변수 선언
-		scanf("%f", &x);	//변수에 실수값 저장
-		printf("%f", x);	//변수에 저장되어 있는 실수값 출력
+		char a;
+		scanf("%c", &a);
+		printf("%c", a + 1);
 	}
-	//1013
+	//1042
 	{
 		int a, b;
-		scanf("%d %d", &a, &b); // 띄어쓰기로 문자구분
-		printf("%d %d", a, b);
+		scanf("%d %d", &a, &b);
+		printf("%d", a / b);
 	}
-	//1014
+	//1043
 	{
-		char x, y;
-		scanf("%c %c", &x, &y);
-		printf("%c %c", y, x); //순서를 바꿔 출력
+		unsigned int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", a % b);
+
 	}
-	//1015
+	//1044
 	{
-		float x;
-		scanf("%f", &x);
-		printf("%.2f", x);  //소수점 3째자리에서 반올림해서 소수점 2번째 자리까지
+		long int a;
+		scanf("%ld", &a);
+		printf("%ld", ++a);
+
 	}
-	//1017
+	//1045
+	{
+		unsigned int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d\n", a + b);
+		printf("%d\n", a - b);
+		printf("%d\n", a * b);
+		printf("%d\n", a / b);
+		printf("%d\n", a % b);
+		printf("%.2f", a/float(b));
+
+	}
+	//1046
+	{
+		int a, b, c;
+		scanf("%d %d %d", &a, &b, &c);
+		printf("%d\n", a + b + c);
+		printf("%.1f", (a + b + c) / 3.0);
+	}
+	//1047
 	{
 		int a;
 		scanf("%d", &a);
-		printf("%d %d %d", a, a, a);
+		printf("%d", a << 1);
 	}
-	//1018
+	//1048
 	{
 		int a, b;
-		scanf("%d:%d", &a, &b);
-		printf("%d:%d", a, b);
-	}
-	//1019
-	{
-		int y, m, d;
-		scanf("%d.%d.%d", &y, &m, &d);
-		printf("%04d.%02d.%02d", y, m, d); //%02d를 사용해 2칸을 채워 출력함
-	}
-	//1020
-	{
-		int x, y;
-		scanf("%d-%d", &x, &y);
-		printf("%06d%07d", x, y); //주민번호 앞자리 6자리, 뒷자리 7자리
-	}
-	//1021
-	{
-		char data[51] = "";
-		scanf("%s", data);
-		printf("%s", data);
-	}
-	//1022
-	{
-		char data[2001];
-		fgets(data, 2000, stdin); //fgets()는공백문자 포함되었는 문장 입력받아 저장 
-		printf("%s", data);
-	}
-	//1023
+		scanf("%d %d", &a, &b);
+		printf("%d", a << b);
+	}*/
+	//1049
 	{
 		int a, b;
-		scanf("%d.%d", &a, &b);
-		printf("%d\n%d", a, b);
+		scanf("%d %d", &a, &b);
+		printf("%d", a > b);
 	}
-	//1024
+	//1050
 	{
-		char data[22];
-		scanf("%s", data);
-		for (int i = 0; data[i] != NULL; i++) {
-			printf("\'%c\'\n", data[i]);
+		int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", a == b);
+	}
+	//1051
+	{
+		int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", a <= b);
+	}
+	//1052
+	{
+		int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", a != b);
+	}
+	//1053
+	{
+		int a;
+		scanf("%d", &a);
+		printf("%d", !a);
+	}
+	//1054
+	{
+		int a, b;
+		a, b = (0 || 1);
+		scanf("%d %d", &a, &b);
+		if (a == 1 && b == 1) {
+			printf("1");
 		}
-
+		else {
+			printf("0");
+		}
 	}
-	//1025
+	//1055
 	{
-		int a, b, c, d, e;
-		scanf("%1d%1d%1d%1d%1d", &a, &b, &c, &d, &e);
-		printf("[%d]\n", a * 10000);
-		printf("[%d]\n", b * 1000);
-		printf("[%d]\n", c * 100);
-		printf("[%d]\n", d * 10);
-		printf("[%d]", e);
+		int a, b;
+		a, b = (0 || 1);
+		scanf("%d %d", &a, &b);
+		if (a == 0 && b == 0) {
+			printf("0");
+		}
+		else {
+			printf("1");
+		}
 	}
-	//1026
+	//1056
 	{
-		int h, m, s;
-		scanf("%d:%d:%d", &h, &m, &s);
-		printf("%d", m);
+		int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", (a && !b) || (!a && b));
 	}
-	//1027
+	//1057
 	{
-		int y, m, d;
-		scanf("%d.%d.%d", &y, &m, &d);
-		printf("%02d-%02d-%04d", d, m, y);
+		int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", (a && b) || (!a && !b));
 	}
-	//1028
+	//1058
 	{
-		unsigned int n;
-		scanf("%u", &n);
-		printf("%u", n);
+		int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", !a && !b);
 	}
-	//1029
+	//1059
 	{
-		double d;
-		scanf("%lf", &d); //double은 long float 해서 lf라고 쓴다
-		printf("%.11lf", d);
+		int a;
+		scanf("%d", &a);
+		printf("%d", ~a);
 	}
-	//1030
+	//1060
 	{
-		long long int n;
-		scanf("%lld", &n);
-		printf("%lld", n);
+		int a, b;
+		scanf("%d %d", &a, &b);
+		printf("%d", a&b);
 	}
 }
