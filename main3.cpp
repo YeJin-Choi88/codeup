@@ -4,7 +4,6 @@
 
 int main() {
 	//1061
-	/*
 	{
 		int a, b;
 		scanf("%d %d", &a, &b);
@@ -200,7 +199,7 @@ int main() {
 			}
 		}
 		printf("%d", sum);
-	}*/
+	}
 	//1079
 	{
 		char ch;
